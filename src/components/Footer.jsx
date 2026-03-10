@@ -26,7 +26,7 @@ function Footer() {
             </div>
         </div>
         <div className='text-center'>
-        <small className='text-white'>© 2026 Mallikarjun General Store. All rights reserved.</small>
+        <small className='text-white'>© 2026 Shree Mallikarjun General & Kirana Store. All rights reserved.</small>
         </div>
         </footer>
     )

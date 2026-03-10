@@ -1,6 +1,12 @@
+"use client"
 import React from 'react'
+import { useRouter } from 'next/navigation'
 
 const Hero = () => {
+  const router = useRouter();
+  const handler=()=>{
+    router.push('/products')
+  }
   return (
     <div className="hero w-full min-h-[60vh] md:min-h-[70vh] lg:min-h-[80vh] bg-[url('/store.jpg')] bg-cover bg-center flex justify-center items-center px-4 my-auto">
 
@@ -16,7 +22,7 @@ const Hero = () => {
           Curated goods for home, wardrobe, and adventure, Est.2023
         </p>
 
-        <button className="mt-4 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded">
+        <button className="mt-4 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded" onClick={handler}>
           Shop New Arrivals
         </button>
 

@@ -25,3 +25,20 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* globals.css */
+
+/* Make html and body full height */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ensures footer at bottom even with no content */
+}
+
+#root, #__next {
+  flex: 1 0 auto; /* Next.js container fills remaining space */
+}
